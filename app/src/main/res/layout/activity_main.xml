@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_launcher"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#643BFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:onClick="click1"
+        android:background="#0f000000"
+        android:gravity="center"
+        android:text="透明度" />
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:onClick="click2"
+        android:background="#0f000000"
+        android:gravity="center"
+        android:text="缩放" />
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:onClick="click3"
+        android:background="#0f000000"
+        android:gravity="center"
+        android:text="位移" />
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:onClick="click4"
+        android:background="#0f000000"
+        android:gravity="center"
+        android:text="旋转" />
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:onClick="click5"
+        android:background="#0f000000"
+        android:gravity="center"
+        android:text="上面四种组合" />
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:onClick="click6"
+        android:background="#0f000000"
+        android:gravity="center"
+        android:text="组合实战" />
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:onClick="click7"
+        android:background="#0f000000"
+        android:gravity="center"
+        android:text="一个送花的动画" />
+    <ImageView
+        android:id="@+id/iv_from"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/avatar"/>
+
+</LinearLayout>
