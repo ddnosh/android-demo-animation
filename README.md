@@ -1,5 +1,5 @@
 # android-demo-animation
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190814100740160.gif)
+![在这里插入图片描述](https://github.com/ddnosh/githubusercontent/blob/master/image/android-demo-animation-readme.gif?raw=true)
 
 # 用法
 1. 透明度  
