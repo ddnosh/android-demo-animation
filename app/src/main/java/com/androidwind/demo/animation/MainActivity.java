@@ -5,9 +5,13 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
+import android.animation.TypeEvaluator;
+import android.animation.ValueAnimator;
+import android.graphics.PointF;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -100,6 +104,38 @@ public class MainActivity extends AppCompatActivity {
     public void click7(View view) {
         AnimationUtil animationUtil = new AnimationUtil();
         animationUtil.playAnimation(this, iv_from, iv_to);
+    }
+
+    public void click8(View view) {
+        ValueAnimator valueAnimator = new ValueAnimator();
+        valueAnimator.setDuration(3000);
+        valueAnimator.setObjectValues(new PointF(0, 0));
+        valueAnimator.setInterpolator(new LinearInterpolator());
+        valueAnimator.setEvaluator(new TypeEvaluator<PointF>()
+        {
+
+            @Override
+            public PointF evaluate(float fraction, PointF startValue,
+                                   PointF endValue)
+            {
+                PointF point = new PointF();
+                point.x = 200 * fraction * 3;
+                point.y = 0.5f * 200 * (fraction * 3) * (fraction * 3);
+                return point;
+            }
+        });
+        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener()
+        {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation)
+            {
+                PointF point = (PointF) animation.getAnimatedValue();
+                iv.setX(point.x);
+                iv.setY(point.y);
+
+            }
+        });
+        valueAnimator.start();
     }
 
     private void startAnimation() {

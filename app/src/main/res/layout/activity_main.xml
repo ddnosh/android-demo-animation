@@ -33,7 +33,7 @@
         android:textStyle="bold" />
     <TextView
         android:layout_margin="5dp"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="40dp"
         android:onClick="click1"
         android:background="#0f000000"
@@ -41,7 +41,7 @@
         android:text="透明度" />
     <TextView
         android:layout_margin="5dp"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="40dp"
         android:onClick="click2"
         android:background="#0f000000"
@@ -49,7 +49,7 @@
         android:text="缩放" />
     <TextView
         android:layout_margin="5dp"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="40dp"
         android:onClick="click3"
         android:background="#0f000000"
@@ -57,7 +57,7 @@
         android:text="位移" />
     <TextView
         android:layout_margin="5dp"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="40dp"
         android:onClick="click4"
         android:background="#0f000000"
@@ -65,7 +65,7 @@
         android:text="旋转" />
     <TextView
         android:layout_margin="5dp"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="40dp"
         android:onClick="click5"
         android:background="#0f000000"
@@ -73,7 +73,7 @@
         android:text="上面四种组合" />
     <TextView
         android:layout_margin="5dp"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="40dp"
         android:onClick="click6"
         android:background="#0f000000"
@@ -81,12 +81,20 @@
         android:text="组合实战" />
     <TextView
         android:layout_margin="5dp"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="40dp"
         android:onClick="click7"
         android:background="#0f000000"
         android:gravity="center"
         android:text="一个送花的动画" />
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:onClick="click8"
+        android:background="#0f000000"
+        android:gravity="center"
+        android:text="ValueAnimator应用" />
     <ImageView
         android:id="@+id/iv_from"
         android:layout_width="50dp"
